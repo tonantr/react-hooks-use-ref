@@ -109,7 +109,7 @@ function Ticker() {
   const [color, setColor] = useState("black");
 
   useEffect(() => {
-    // every 1 second, generate a new random price
+    // every 1 second, generate a new random price.
     const id = setInterval(() => setPrice(makeRandomNumber), 1000);
     return function () {
       clearInterval(id);
